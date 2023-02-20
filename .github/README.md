@@ -13,11 +13,17 @@ This is repo for my 🐧 **Linux dotfiles**.
 - **Picom**
 - **Neovim**
 - **Zsh**
+- **Starship**
 - **Nitrogen**
 - **Clipman**
+- **Zathura**
 
 ## 🎨 Color scheme
 In this configuration I am using [Catppuccin Mocha](https://github.com/catppuccin/catppuccin).
+
+## 📸 Screenshots
+
+![Second monitor](docs/screenshot_2.png)
 
 ## 👤 Credits
 This project was made by **Aleksander Jóźwik** ([@jozwikaleksander](https://github.com/jozwikaleksander)).
