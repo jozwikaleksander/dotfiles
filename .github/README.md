@@ -1,5 +1,7 @@
 # 📁  Dotfiles
 
+![Main screenshot](docs/screenshot_1.png)
+
 This is repo for my linux dotfiles.
 
 ## 📦 Software
