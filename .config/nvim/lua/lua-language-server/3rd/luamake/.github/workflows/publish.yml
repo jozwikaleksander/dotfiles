@@ -1,0 +1,32 @@
+name: build
+on: push
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules : recursive
+    - run: .\compile\build.bat
+    - run: .\luamake.exe version
+  linux:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules : recursive
+    - run: sudo apt-get update
+    - run: sudo apt-get install -y libreadline-dev ninja-build
+    - run: sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 100
+    - run: sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 100
+    - run: ./compile/build.sh
+    - run: ./luamake version
+  macos:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules : recursive
+    - run: brew install ninja
+    - run: ./compile/build.sh
+    - run: ./luamake version
