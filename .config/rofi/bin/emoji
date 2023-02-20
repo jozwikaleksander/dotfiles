@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+rofi \
+  -modi emoji \
+  -show emoji \
+  -kb-custom-1 Ctrl+C \
+  -kb-cancel Escape \
+  -theme "$HOME"/.config/rofi/config/emoji.rasi
