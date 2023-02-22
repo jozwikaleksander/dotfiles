@@ -6,17 +6,17 @@ This is repo for my 🐧 **Linux dotfiles**.
 
 ## 📦 Software
 
-- **Awesome WM**
-- **Alacritty**
-- **Rofi**
-- **Brave with [my Startpage extension](https://github.com/jozwikaleksander/startpage)**
-- **Picom**
-- **Neovim**
-- **Zsh**
-- **Starship**
-- **Nitrogen**
-- **Clipman**
-- **Zathura**
+- 🪟  Window Manager - **Awesome WM**
+- 🖥  Terminal Emulator - **Alacritty**
+- ⚙   Run launcher - **Rofi**
+- 🌐  Browser - **Brave with [my Startpage extension](https://github.com/jozwikaleksander/startpage)**
+- 💥  Compositor - **Picom**
+- 📃  Text editor - **Neovim**
+- 🐚  Shell - **Zsh**
+- ⚡  Prompt - **Starship**
+- 🌆  Wallpaper Manager - **Nitrogen**
+- 📋  Clipboard Manager - **Clipman**
+- 📜  PDF reader - **Zathura**
 
 ## 🎨 Color scheme
 In this configuration I am using [Catppuccin Mocha](https://github.com/catppuccin/catppuccin).

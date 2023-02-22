@@ -505,8 +505,14 @@ globalkeys = mytable.join(
     -- Prompt
     awful.key({ modkey }, "r", function () awful.spawn.with_shell("sh $HOME/.config/rofi/bin/launcher") end,
               {description = "run prompt", group = "launcher"}),
+    
+    -- Power menu
     awful.key({ modkey, "Shift" }, "x", function () awful.spawn.with_shell("sh $HOME/.config/rofi/bin/powermenu") end,
               {description = "powermenu", group = "launcher"}),
+    
+    -- Kill process
+    awful.key({ modkey, altkey}, "k", function () awful.spawn.with_shell("bash $HOME/.config/rofi/bin/killScript") end,
+              {description = "kill process", group = "launcher"}),
     awful.key({ modkey }, "x",
               function ()
                   awful.prompt.run {
@@ -516,8 +522,17 @@ globalkeys = mytable.join(
                     history_path = awful.util.get_cache_dir() .. "/history_eval"
                   }
               end,
-              {description = "lua execute prompt", group = "awesome"})
+              {description = "lua execute prompt", group = "awesome"}),
     --]]
+    awful.key({ modkey }, ".",     function () 
+        awful.spawn.with_shell('bash $HOME/.config/rofi/bin/emoji')
+      end ,
+      {description = "open emoji selector", group = "launcher"}),
+
+    awful.key({ modkey, "Shift" }, ".",     function () 
+        awful.spawn.with_shell('bash $HOME/.config/rofi/bin/nerdfont')
+      end ,
+      {description = "open nerd font symbol selector", group = "launcher"})
 )
 
 clientkeys = mytable.join(
@@ -568,12 +583,8 @@ clientkeys = mytable.join(
     awful.key({ modkey, "Mod1"    }, "Right",     function () awful.tag.incmwfact( 0.01)    end),
     awful.key({ modkey, "Mod1"    }, "Left",     function () awful.tag.incmwfact(-0.01)    end),
     awful.key({ modkey, "Mod1"    }, "Down",     function () awful.client.incwfact( 0.01)    end),
-    awful.key({ modkey, "Mod1"    }, "Up",     function () awful.client.incwfact(-0.01)    end),
+    awful.key({ modkey, "Mod1"    }, "Up",     function () awful.client.incwfact(-0.01)    end)
    
-    awful.key({ modkey }, ".",     function () 
-        awful.spawn.with_shell('rofi -modi emoji -show emoji -kb-custom-1 Ctrl+C -theme "$HOME"/.config/rofi/config/emoji.rasi')
-      end ,
-      {description = "open emoji selector", group = "launcher"})
 )
 
 -- Bind all key numbers to tags.
@@ -705,13 +716,10 @@ awful.rules.rules = {
     properties = { maximized = false } },
     
     { rule = { class = "Brave-browser" },
-    properties = { maximized = false, tag="󰇧 " } },
+    properties = { floating = false, maximized = false, tag="󰇧 " } },
 
     { rule = { class = "Code" },
-    properties = { maximized = false}},
- 
-    { rule = {class = "crx_picebhhlijnlefeleilfbanaghjlkkna"},
-    properties = {maximized = false}},
+    properties = { maximized = false}}, 
 
     { rule = {class = "Alacritty"},
     properties = {tag=" "}},

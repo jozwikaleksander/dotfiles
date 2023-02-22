@@ -124,8 +124,7 @@ theme.notification_shape = function(cr, w, h)
 end
 theme.notification_margin = dpi(10)
 naughty.config.defaults.margin = theme.notification_margin
-theme.notification_opacity = 0.9
-theme.notification_bg = theme.bg_normal.."55"
+theme.notification_bg = theme.bg_normal.."EE"
 theme.notification_font = theme.font
 theme.notification_spacing = dpi(20)
 theme.notification_icon_size = dpi(128)
