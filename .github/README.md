@@ -27,19 +27,13 @@ In this configuration I am using [Catppuccin Mocha](https://github.com/catppucci
 
 ## 🧰 Dependencies
 
-    awesome alacritty rofi zsh zsh-syntax-highlighting xclip xdotool rofi-emoji lxappearance picom neovim packer starship nitrogen zathura clipman brave-browser pasystray pokemon-colorscripts ninja
+    awesome alacritty rofi zsh zsh-syntax-highlighting xclip xdotool rofi-emoji lxappearance picom neovim packer starship nitrogen zathura clipman brave-browser pasystray pokemon-colorscripts ninja python3 python-pip paplay
 
 Also remember about installing font: [Iosevka Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Iosevka.zip)
 
-### Arch Linux
+## ⬇️  Installation
 
-    sudo pacman -Syu awesome alacritty rofi zsh zsh-syntax-highlighting xclip xdotool rofi-emoji lxappearance picom neovim starship nitrogen zathura clipman brave-browser pasystray pokemon-colorscripts ninja
-
-    git clone --depth 1 https://github.com/wbthomason/packer.nvim\ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-
-### Other distributions
-
-You can install most of packages using your package manager, but some you will have to propably build from source.
+You can use **install.sh** to download and install dotfiles (remember to edit the script).
 
 ## 👤 Credits
 This project was made by **Aleksander Jóźwik** ([@jozwikaleksander](https://github.com/jozwikaleksander)).

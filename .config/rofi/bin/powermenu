@@ -10,7 +10,7 @@ case "$chosen" in
 	"  Power Off") paplay "$HOME"/.config/awesome/sounds/shutdown.wav && poweroff ;;
 	"  Restart") reboot ;;
 	"  Suspend") systemctl suspend;;
-  "  Log Out") awesome.quit();;
+  "  Log Out") xdg-screensaver lock ;;
 	"  Lock") xdg-screensaver lock ;;
 	*) exit 1 ;;
 esac
