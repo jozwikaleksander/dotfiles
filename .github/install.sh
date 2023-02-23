@@ -3,7 +3,7 @@
 USER = "user" 
 
 # Dependencies
-sudo pacman -Syu awesome alacritty rofi zsh zsh-syntax-highlighting xclip xdotool rofi-emoji lxappearance picom neovim starship nitrogen zathura clipman brave-browser pasystray pokemon-colorscripts unzip ninja python3 python-pip paplay
+sudo pacman -Syu awesome alacritty rofi zsh zsh-syntax-highlighting xclip xdotool rofi-emoji lxappearance picom neovim starship nitrogen zathura clipman brave-browser pasystray pokemon-colorscripts unzip ninja python3 python-pip paplay lxpolkit
 
 # Changing shell
 chsh -s /usr/bin/zsh

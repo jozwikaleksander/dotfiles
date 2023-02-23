@@ -27,7 +27,7 @@ In this configuration I am using [Catppuccin Mocha](https://github.com/catppucci
 
 ## 🧰 Dependencies
 
-    awesome alacritty rofi zsh zsh-syntax-highlighting xclip xdotool rofi-emoji lxappearance picom neovim packer starship nitrogen zathura clipman brave-browser pasystray pokemon-colorscripts ninja python3 python-pip paplay
+    awesome alacritty rofi zsh zsh-syntax-highlighting xclip xdotool rofi-emoji lxappearance picom neovim packer starship nitrogen zathura clipman brave-browser pasystray pokemon-colorscripts ninja python3 python-pip paplay lxpolkit
 
 Also remember about installing font: [Iosevka Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Iosevka.zip)
 

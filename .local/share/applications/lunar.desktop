@@ -1,0 +1,8 @@
+[Desktop Entry]  
+Version=2.15.1
+Name=Lunar Client  
+Comment=Minecraft client
+Exec=/bin/Lunar\ Client-2.15.1.AppImage
+Icon=/usr/share/icons/ePapirus-Dark/128x128/apps/lunarclient.svg
+Terminal=false  
+Type=Application

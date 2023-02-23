@@ -12,6 +12,7 @@ start() {
 }
 
 # Autostart programs
+start lxpolkit
 start pasystray 
 start xfce4-clipman
 start "picom --experimental-backends -b"

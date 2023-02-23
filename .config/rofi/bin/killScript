@@ -24,7 +24,7 @@
 ## script will not hit this if there is no config-file to load
 ## shellcheck disable=SC1090
 #source "$(get_config)"
-DMENU="rofi -dmenu -theme "$HOME"/.config/rofi/config/kill.rasi -i -l 20 -p"
+DMENU="rofi -dmenu -theme "$HOME"/.config/rofi/config/kill.rasi -i -l 10 -p"
 main() {
     # Running ps to get running processes and display in dmenu.
     # In this script we use a variable called $DMENU, in your scripts, you

@@ -41,7 +41,7 @@ local function factory(args)
                                       local day = os.date("%a %d", wn["dt"])
                                       local temp = math.floor(wn["main"]["temp"])
                                       local desc = wn["weather"][1]["description"]
-                                      return string.format("<b>%s</b>: %s, %d ", day, desc, temp)
+                                      return string.format("<b>%s</b>: %s, %d °C", day, desc, temp)
                                   end
     local weather_na_markup     = args.weather_na_markup or " N/A "
     local followtag             = args.followtag or false
