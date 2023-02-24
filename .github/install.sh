@@ -3,7 +3,7 @@
 USER = "user" 
 
 # Dependencies
-sudo pacman -Syu awesome alacritty rofi zsh zsh-syntax-highlighting xclip xdotool rofi-emoji lxappearance picom neovim starship nitrogen zathura clipman brave-browser pasystray pokemon-colorscripts unzip ninja python3 python-pip paplay lxpolkit
+sudo pacman -Syu awesome alacritty rofi zsh zsh-syntax-highlighting xclip xdotool rofi-emoji lxappearance picom neovim starship nitrogen zathura clipman brave-browser pasystray pokemon-colorscripts unzip ninja python3 python-pip paplay lxpolkit lsd
 
 # Changing shell
 chsh -s /usr/bin/zsh
@@ -24,3 +24,6 @@ python3 -m pip install python-lsp-server
 echo "#!/bin/bash
 exec '/home/${USER}/.config/nvim/lua/lua-language-server/bin/lua-language-server' '$@' " > /home/USER/.local/bin/lua-language-server
 chmod +x /home/${USER}/.local/bin/lua-language-server
+
+# Other stuff I need
+sudo pacman -Syu code pcmanfm arttime

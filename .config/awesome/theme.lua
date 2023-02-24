@@ -192,7 +192,6 @@ local my_systray = wibox.widget{
     },
     bg = theme.bg_normal,
     widget     = wibox.container.background,
-    shape      = gears.shape.rounded_rect,
     shape_clip = true,
 }
 
