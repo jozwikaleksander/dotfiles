@@ -1,0 +1,16 @@
+#! /bin/sh
+chosen=$(printf "  Power Off\n  Restart\n  Suspend\n  Log Out\n  Lock" | 
+rofi \
+	-dmenu \
+  -i \
+  -window-title "Choose:"  \
+	-theme "$HOME"/.config/rofi/config/powermenu.rasi
+)
+case "$chosen" in
+	"  Power Off") paplay "$HOME"/.config/awesome/sounds/shutdown.wav && poweroff ;;
+	"  Restart") reboot ;;
+	"  Suspend") systemctl suspend;;
+  "  Log Out") xdg-screensaver lock ;;
+	"  Lock") xdg-screensaver lock ;;
+	*) exit 1 ;;
+esac
